@@ -5,23 +5,23 @@ const app = express();
 app.use(
   "/auth",
   createProxyMiddleware({
-    target: "http://localhost:3001",
+    target: "https://auth-moac9hzup-bikashs-projects-12b52b64.vercel.app",
     changeOrigin: true,
   })
 );
 
 app.use(
-  "/auth",
+  "/captain",
   createProxyMiddleware({
-    target: "http://localhost:3002",
+    target: "https://captain-y1p6yl7eb-bikashs-projects-12b52b64.vercel.app",
     changeOrigin: true,
   })
 );
 
 app.use(
-  "/auth",
+  "/user",
   createProxyMiddleware({
-    target: "http://localhost:3003",
+    target: "https://user-5p4w5lb4n-bikashs-projects-12b52b64.vercel.app",
     changeOrigin: true,
   })
 );
