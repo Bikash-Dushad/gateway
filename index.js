@@ -5,7 +5,8 @@ const app = express();
 app.use(
   "/auth",
   createProxyMiddleware({
-    target: "https://auth-moac9hzup-bikashs-projects-12b52b64.vercel.app",
+    // target: "https://auth-moac9hzup-bikashs-projects-12b52b64.vercel.app",
+    target: "http://localhost:3002",
     changeOrigin: true,
   })
 );
@@ -13,7 +14,8 @@ app.use(
 app.use(
   "/captain",
   createProxyMiddleware({
-    target: "https://captain-y1p6yl7eb-bikashs-projects-12b52b64.vercel.app",
+    // target: "https://captain-y1p6yl7eb-bikashs-projects-12b52b64.vercel.app",
+    target: "http://localhost:3003",
     changeOrigin: true,
   })
 );
@@ -21,7 +23,8 @@ app.use(
 app.use(
   "/user",
   createProxyMiddleware({
-    target: "https://user-5p4w5lb4n-bikashs-projects-12b52b64.vercel.app",
+    // target: "https://user-5p4w5lb4n-bikashs-projects-12b52b64.vercel.app",
+    target: "http://localhost:3001",
     changeOrigin: true,
   })
 );
