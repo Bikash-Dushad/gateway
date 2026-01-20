@@ -9,7 +9,7 @@ app.use(
     target: "http://localhost:3002",
     changeOrigin: true,
   }),
-);
+); // docker compose up -d
 
 app.use(
   "/captain",
