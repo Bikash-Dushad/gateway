@@ -29,6 +29,15 @@ app.use(
   }),
 );
 
+app.use(
+  "/booking",
+  createProxyMiddleware({
+    // target: "https://user-5p4w5lb4n-bikashs-projects-12b52b64.vercel.app",
+    target: "http://localhost:3004",
+    changeOrigin: true,
+  }),
+);
+
 app.listen(3000, () => {
   console.log("server is running on 3000");
 });
